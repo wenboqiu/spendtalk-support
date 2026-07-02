@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>隐私政策 · 隱私權政策 · Privacy Policy — Spendome</title>
+  <link rel="stylesheet" href="shared/base.css" />
+  <style>
+    .lang-switch {
+      position: fixed; top: 14px; right: 14px; z-index: 20;
+      display: inline-flex; background: var(--bg); border: 1px solid var(--border);
+      border-radius: 999px; overflow: hidden; font-size: 13px; font-weight: 600;
+    }
+    .lang-switch button { border: none; background: transparent; color: var(--fg-muted); padding: 6px 14px; cursor: pointer; font: inherit; }
+    .lang-switch button.on { background: var(--accent); color: #fff; }
+    .lang-hant, .lang-hans, .lang-en { display: none; }
+    body.l-hant .lang-hant { display: block; }
+    body.l-hans .lang-hans { display: block; }
+    body.l-en  .lang-en  { display: block; }
+  </style>
+</head>
+<body class="l-hans">
+  <div class="lang-switch">
+    <button data-lang="hans" class="on">简体</button>
+    <button data-lang="hant">繁體</button>
+    <button data-lang="en">EN</button>
+  </div>
+
+  <!-- ───────── 简体中文 ───────── -->
+  <div class="wrap lang-hans">
+    <header class="doc-header">
+      <span class="app">会记账 · Spendome</span>
+      <h1>隐私政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 2 日 ｜ 最近更新：2026 年 7 月 2 日</p>
+    </header>
+
+    <p>
+      Wenbo Qiu（以下简称"我们"）非常重视您的个人信息与隐私保护。本《隐私政策》旨在向您说明，当您使用
+      会记账（Spendome，以下简称"本应用"）时，我们如何收集、使用、存储、共享与保护您的个人信息，以及您就个人信息所享有的权利。
+    </p>
+    <p>
+      请您在使用本应用前仔细阅读并充分理解本政策。<strong>当您勾选同意并开始使用本应用，即表示您已阅读并同意本政策的全部内容。</strong>
+      如您不同意本政策，您可以选择不使用本应用。
+    </p>
+
+    <div class="note">
+      本应用以"按需授权、最小收集"为原则。除完成核心功能所必需外，我们不会强制收集与服务无关的个人信息。
+    </div>
+
+    <h2>一、我们如何收集与使用您的个人信息</h2>
+    <p>我们仅在为实现以下功能所必需时，收集相应信息：</p>
+    <table>
+      <thead>
+        <tr><th>使用场景</th><th>收集的信息</th><th>用途</th><th>是否必需</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Apple 账号登录</td><td>Apple 用户标识（Apple Sub）、您授权的邮箱与昵称（可隐藏）</td><td>创建／登录账号</td><td>选择此方式时必需</td></tr>
+        <tr><td>游客／设备登录</td><td>随机设备标识</td><td>在不注册的情况下提供基础体验</td><td>选择此方式时必需</td></tr>
+        <tr><td>语音记账</td><td>麦克风录音（在设备本地转文字后丢弃，不上传录音）</td><td>调用设备系统语音识别将语音转为文字，随后交由 AI 解析记账内容</td><td>使用语音功能时必需</td></tr>
+        <tr><td>AI 记账 / 助手</td><td>您输入或语音转写的记账描述文字</td><td>调用大语言模型解析金额、分类、日期，或回答您的查账、统计请求</td><td>使用该功能时必需</td></tr>
+        <tr><td>账单数据</td><td>您记录的收支金额、分类、日期、备注、来源渠道</td><td>展示账单列表、统计分析、图表洞察、AI 查账</td><td>必需</td></tr>
+        <tr><td>云同步</td><td>账单数据、分类偏好、提醒配置等</td><td>在您的多台设备间同步数据</td><td>登录后开启时必需</td></tr>
+        <tr><td>周期提醒</td><td>您设置的周期项目名称、金额、提醒时间</td><td>在到期前通过本地推送提醒您</td><td>使用该功能时必需</td></tr>
+        <tr><td>订阅与应用内购买</td><td>平台交易凭证、订阅产品 ID、交易号、订阅状态与到期时间</td><td>核验订阅有效性、开通 Pro 权益、防止重复发放</td><td>购买时必需</td></tr>
+        <tr><td>用量统计</td><td>每日 AI 使用次数</td><td>计算免费额度、发放奖励额度</td><td>必需</td></tr>
+      </tbody>
+    </table>
+
+    <h2>二、我们如何使用第三方服务（SDK 及受托处理者）</h2>
+    <p>为实现特定功能，本应用接入了以下第三方服务。这些第三方在其各自的隐私政策约束下处理相关信息，建议您一并阅读：</p>
+    <table>
+      <thead><tr><th>第三方</th><th>用途</th><th>涉及的信息</th></tr></thead>
+      <tbody>
+        <tr><td>Apple（登录与内购）</td><td>Apple 账号登录、App Store 订阅与支付</td><td>Apple 用户标识、交易凭证</td></tr>
+        <tr><td>Google Play（内购）</td><td>Android 端订阅与支付</td><td>交易凭证</td></tr>
+        <tr><td>大语言模型服务商<br/>（如 Anthropic、OpenAI、DeepSeek 等）</td><td>解析记账描述、回答 AI 助手问题</td><td>您输入或语音转写的记账描述文字（不含您的身份信息）</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      您输入的记账描述文字会发送至上述大语言模型服务商进行处理。我们仅传输文字内容本身，<strong>不会将您的 Apple 账号等身份信息一并提供给模型服务商</strong>。请勿在记账描述中输入您不希望被处理的敏感个人信息。
+    </div>
+    <div class="note">
+      本应用<strong>不接入任何第三方广告或跨应用追踪 SDK</strong>，亦不收集用于广告投放的设备标识符。
+    </div>
+
+    <h2>三、设备权限调用说明</h2>
+    <ul>
+      <li><strong>麦克风：</strong>仅在您使用语音记账时申请。语音识别在设备本地完成，录音不会上传至我们的服务器。</li>
+      <li><strong>通知：</strong>用于发送周期提醒（订阅到期、账单提醒等）。</li>
+      <li><strong>网络：</strong>用于登录、AI 记账、云同步及订阅核验等联网功能。</li>
+    </ul>
+    <p>上述权限均不会默认开启，您可随时在系统设置中关闭。关闭后相关功能将无法使用，但不影响其他功能。</p>
+
+    <h2>四、信息的存储</h2>
+    <ul>
+      <li><strong>存储地点：</strong>我们收集的个人信息存储于新加坡的服务器。</li>
+      <li><strong>存储期限：</strong>我们仅在实现本政策所述目的所必需的期间内保留您的个人信息；超出期限后，我们将对其删除或匿名化处理，法律法规另有规定的除外。</li>
+      <li><strong>本地存储：</strong>您的账单数据会缓存在设备本地数据库中，登录凭证以加密方式存储于设备安全存储区。</li>
+    </ul>
+
+    <h2>五、个人信息的跨境传输</h2>
+    <p>由于我们的服务器与部分第三方服务商（例如大语言模型服务商）可能位于您所在国家／地区之外，您的个人信息可能会被传输至并存储或处理于其他司法管辖区。这些地区的数据保护法律可能与您所在地不同。我们将采取合理措施，确保此类传输符合适用法律，并对您的信息给予适当保护。</p>
+
+    <h2>六、信息的共享、转让与公开披露</h2>
+    <p>我们不会出售您的个人信息。除以下情形外，我们不会与任何第三方共享您的个人信息：</p>
+    <ul>
+      <li>事先获得您的明确同意；</li>
+      <li>为实现"第二节"所述功能而向相应受托处理者提供必要信息；</li>
+      <li>根据法律法规、司法或行政机关的强制性要求；</li>
+      <li>为维护本应用及用户的合法权益、排查欺诈与安全风险所必需。</li>
+    </ul>
+    <p>如发生合并、收购或破产清算等导致信息转让的情形，我们将要求承接方继续受本政策约束，否则将要求其重新征得您的同意。</p>
+
+    <h2>七、我们如何保护您的信息</h2>
+    <ul>
+      <li>传输层采用 HTTPS 加密，登录凭证以加密形式存储；</li>
+      <li>对服务端数据访问实施权限控制与最小授权；</li>
+      <li>为提供和改进服务、排查故障及防范安全风险，经授权的工作人员可能在最小必要范围内访问您的账单描述内容，相关人员负有保密义务，且仅限于上述目的；</li>
+      <li>尽管我们采取了合理的安全措施，但请您理解，互联网环境并非绝对安全，我们将持续努力保障您的信息安全。</li>
+    </ul>
+
+    <h2>八、您的权利</h2>
+    <p>在符合适用法律的前提下，您有权对您的个人信息行使以下权利：</p>
+    <ul>
+      <li><strong>查询与更正：</strong>您可在应用内查看并修改账单内容；</li>
+      <li><strong>删除：</strong>您可删除您的任意账单记录；</li>
+      <li><strong>数据可携：</strong>在适用法律允许的范围内，您可要求以通用格式获取您提供给我们的数据；</li>
+      <li><strong>注销账号：</strong>您可在应用内"设置"中申请注销账号。账号注销后，我们将删除或匿名化与您账号关联的个人信息，法律法规另有要求的除外；</li>
+      <li><strong>撤回同意：</strong>您可通过关闭系统权限或停止使用相关功能撤回授权；</li>
+      <li><strong>投诉与反馈：</strong>您可通过本政策"联系我们"载明的方式与我们联系；若您所在地设有个人信息保护主管机关，您也有权向其投诉。</li>
+    </ul>
+
+    <h2>九、未成年人保护</h2>
+    <p>本应用主要面向成年人。若您为未成年人，请在监护人陪同下阅读本政策，并在征得监护人同意后使用本应用。我们不会在明知对方为儿童的情况下，主动收集其个人信息；如发现在未事先获得监护人同意的情况下收集了儿童个人信息，我们将尽快删除。</p>
+
+    <h2>十、本政策的更新</h2>
+    <p>我们可能适时修订本政策。修订后我们将在本页面公布更新后的版本并更新"生效日期"。对于重大变更，我们会通过应用内提示等方式另行告知。变更生效后您继续使用本应用，即视为您接受修订后的政策。</p>
+
+    <h2>十一、联系我们</h2>
+    <p>如您对本政策或个人信息保护有任何疑问、意见或投诉，可通过以下方式与我们联系：</p>
+    <ul>
+      <li>运营方：Wenbo Qiu</li>
+      <li>联系邮箱：<a href="mailto:wondergarden.app@qq.com">wondergarden.app@qq.com</a></li>
+    </ul>
+    <p>我们将在收到您的请求后，于法律规定的期限内予以回复。</p>
+
+    <footer class="doc-footer">© 2026 Wenbo Qiu ｜ 会记账 · Spendome</footer>
+  </div>
+
+  <!-- ───────── 繁體中文 ───────── -->
+  <div class="wrap lang-hant">
+    <header class="doc-header">
+      <span class="app">會記帳 · Spendome</span>
+      <h1>隱私權政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 2 日 ｜ 最後更新：2026 年 7 月 2 日</p>
+    </header>
+
+    <p>
+      Wenbo Qiu（以下簡稱「我們」）非常重視您的個人資料與隱私保護。本《隱私權政策》旨在向您說明，當您使用
+      會記帳（Spendome，以下簡稱「本應用程式」）時，我們如何蒐集、使用、儲存、分享與保護您的個人資料，以及您就個人資料所享有的權利。
+    </p>
+    <p>
+      請您在使用本應用程式前仔細閱讀並充分理解本政策。<strong>當您勾選同意並開始使用本應用程式，即表示您已閱讀並同意本政策之全部內容。</strong>
+      若您不同意本政策，您可選擇不使用本應用程式。
+    </p>
+
+    <div class="note">
+      本應用程式以「按需授權、最小蒐集」為原則。除完成核心功能所必需者外，我們不會強制蒐集與服務無關的個人資料。
+    </div>
+
+    <h2>一、我們如何蒐集與使用您的個人資料</h2>
+    <p>我們僅在為實現以下功能所必需時，蒐集相應資料：</p>
+    <table>
+      <thead>
+        <tr><th>使用情境</th><th>蒐集的資料</th><th>用途</th><th>是否必需</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Apple 帳號登入</td><td>Apple 使用者識別碼（Apple Sub）、您授權的電子郵件與暱稱（可隱藏）</td><td>建立／登入帳號</td><td>選擇此方式時必需</td></tr>
+        <tr><td>訪客／裝置登入</td><td>隨機裝置識別碼</td><td>在不註冊的情況下提供基礎體驗</td><td>選擇此方式時必需</td></tr>
+        <tr><td>語音記帳</td><td>麥克風錄音（在裝置本機轉文字後丟棄，不上傳錄音）</td><td>呼叫裝置系統語音辨識將語音轉為文字，隨後交由 AI 解析記帳內容</td><td>使用語音功能時必需</td></tr>
+        <tr><td>AI 記帳 / 助手</td><td>您輸入或語音轉寫的記帳描述文字</td><td>呼叫大型語言模型解析金額、分類、日期，或回答您的查帳、統計請求</td><td>使用該功能時必需</td></tr>
+        <tr><td>帳單資料</td><td>您記錄的收支金額、分類、日期、備註、來源管道</td><td>展示帳單列表、統計分析、圖表洞察、AI 查帳</td><td>必需</td></tr>
+        <tr><td>雲端同步</td><td>帳單資料、分類偏好、提醒設定等</td><td>在您的多台裝置間同步資料</td><td>登入後開啟時必需</td></tr>
+        <tr><td>週期提醒</td><td>您設定的週期項目名稱、金額、提醒時間</td><td>在到期前透過本機推播提醒您</td><td>使用該功能時必需</td></tr>
+        <tr><td>訂閱與應用程式內購買</td><td>平台交易憑證、訂閱產品 ID、交易編號、訂閱狀態與到期時間</td><td>核驗訂閱有效性、開通 Pro 權益、防止重複發放</td><td>購買時必需</td></tr>
+        <tr><td>用量統計</td><td>每日 AI 使用次數</td><td>計算免費額度、發放獎勵額度</td><td>必需</td></tr>
+      </tbody>
+    </table>
+
+    <h2>二、我們如何使用第三方服務（SDK 及受託處理者）</h2>
+    <p>為實現特定功能，本應用程式接入了以下第三方服務。這些第三方在其各自的隱私權政策約束下處理相關資料，建議您一併閱讀：</p>
+    <table>
+      <thead><tr><th>第三方</th><th>用途</th><th>涉及的資料</th></tr></thead>
+      <tbody>
+        <tr><td>Apple（登入與內購）</td><td>Apple 帳號登入、App Store 訂閱與付款</td><td>Apple 使用者識別碼、交易憑證</td></tr>
+        <tr><td>Google Play（內購）</td><td>Android 端訂閱與付款</td><td>交易憑證</td></tr>
+        <tr><td>大型語言模型服務商<br/>（如 Anthropic、OpenAI、DeepSeek 等）</td><td>解析記帳描述、回答 AI 助手問題</td><td>您輸入或語音轉寫的記帳描述文字（不含您的身分資訊）</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      您輸入的記帳描述文字會傳送至上述大型語言模型服務商進行處理。我們僅傳輸文字內容本身，<strong>不會將您的 Apple 帳號等身分資訊一併提供給模型服務商</strong>。請勿在記帳描述中輸入您不希望被處理的敏感個人資料。
+    </div>
+    <div class="note">
+      本應用程式<strong>不接入任何第三方廣告或跨應用追蹤 SDK</strong>，亦不蒐集用於廣告投放的裝置識別碼。
+    </div>
+
+    <h2>三、裝置權限呼叫說明</h2>
+    <ul>
+      <li><strong>麥克風：</strong>僅在您使用語音記帳時申請。語音辨識在裝置本機完成，錄音不會上傳至我們的伺服器。</li>
+      <li><strong>通知：</strong>用於發送週期提醒（訂閱到期、帳單提醒等）。</li>
+      <li><strong>網路：</strong>用於登入、AI 記帳、雲端同步及訂閱核驗等連網功能。</li>
+    </ul>
+    <p>上述權限均不會預設開啟，您可隨時於系統設定中關閉。關閉後相關功能將無法使用，但不影響其他功能。</p>
+
+    <h2>四、資料的儲存</h2>
+    <ul>
+      <li><strong>儲存地點：</strong>我們蒐集的個人資料儲存於新加坡的伺服器。</li>
+      <li><strong>儲存期限：</strong>我們僅在實現本政策所述目的所必需的期間內保留您的個人資料；超出期限後，我們將予以刪除或匿名化處理，法律另有規定者除外。</li>
+      <li><strong>本機儲存：</strong>您的帳單資料會快取於裝置本機資料庫中，登入憑證以加密方式儲存於裝置安全儲存區。</li>
+    </ul>
+
+    <h2>五、個人資料的跨境傳輸</h2>
+    <p>由於我們的伺服器與部分第三方服務商（例如大型語言模型服務商）可能位於您所在國家／地區之外，您的個人資料可能會被傳輸至並儲存或處理於其他司法管轄區。該等地區的資料保護法律可能與您所在地不同。我們將採取合理措施，確保此類傳輸符合適用法律，並對您的資料給予適當保護。</p>
+
+    <h2>六、資料的分享、轉讓與公開揭露</h2>
+    <p>我們不會出售您的個人資料。除以下情形外，我們不會與任何第三方分享您的個人資料：</p>
+    <ul>
+      <li>事先取得您的明確同意；</li>
+      <li>為實現「第二節」所述功能而向相應受託處理者提供必要資料；</li>
+      <li>依法律規定、司法或行政機關之強制性要求；</li>
+      <li>為維護本應用程式及使用者的合法權益、排查詐欺與安全風險所必需。</li>
+    </ul>
+    <p>如發生合併、收購或破產清算等導致資料轉讓之情形，我們將要求承接方繼續受本政策約束，否則將要求其重新取得您的同意。</p>
+
+    <h2>七、我們如何保護您的資料</h2>
+    <ul>
+      <li>傳輸層採用 HTTPS 加密，登入憑證以加密形式儲存；</li>
+      <li>對伺服器端資料存取實施權限控制與最小授權；</li>
+      <li>為提供與改善服務、排查故障及防範安全風險，經授權的工作人員可能在最小必要範圍內存取您的帳單描述內容，相關人員負有保密義務，且僅限於上述目的；</li>
+      <li>儘管我們採取了合理的安全措施，但請您理解，網際網路環境並非絕對安全，我們將持續努力保障您的資料安全。</li>
+    </ul>
+
+    <h2>八、您的權利</h2>
+    <p>在符合適用法律的前提下，您有權對您的個人資料行使以下權利：</p>
+    <ul>
+      <li><strong>查詢與更正：</strong>您可於應用程式內查看並修改帳單內容；</li>
+      <li><strong>刪除：</strong>您可刪除您的任意帳單記錄；</li>
+      <li><strong>資料可攜：</strong>在適用法律允許的範圍內，您可要求以通用格式取得您提供予我們的資料；</li>
+      <li><strong>登出帳號：</strong>您可於應用程式內「設定」中申請登出帳號。帳號登出後，我們將刪除或匿名化與您帳號關聯的個人資料，法律另有要求者除外；</li>
+      <li><strong>撤回同意：</strong>您可透過關閉系統權限或停止使用相關功能撤回授權；</li>
+      <li><strong>申訴與反饋：</strong>您可透過本政策「聯絡我們」載明的方式與我們聯絡；若您所在地設有個人資料保護主管機關，您亦有權向其提出申訴。</li>
+    </ul>
+
+    <h2>九、未成年人保護</h2>
+    <p>本應用程式主要面向成年人。若您為未成年人，請在監護人陪同下閱讀本政策，並在取得監護人同意後使用本應用程式。我們不會在明知對方為兒童的情況下，主動蒐集其個人資料；如發現在未事先取得監護人同意的情況下蒐集了兒童個人資料，我們將儘快刪除。</p>
+
+    <h2>十、本政策的更新</h2>
+    <p>我們可能適時修訂本政策。修訂後我們將在本頁面公布更新後的版本並更新「生效日期」。對於重大變更，我們會透過應用程式內提示等方式另行告知。變更生效後您繼續使用本應用程式，即視為您接受修訂後的政策。</p>
+
+    <h2>十一、聯絡我們</h2>
+    <p>如您對本政策或個人資料保護有任何疑問、意見或申訴，可透過以下方式與我們聯絡：</p>
+    <ul>
+      <li>營運方：Wenbo Qiu</li>
+      <li>聯絡信箱：<a href="mailto:wondergarden.app@qq.com">wondergarden.app@qq.com</a></li>
+    </ul>
+    <p>我們將在收到您的請求後，於法律規定的期限內予以回覆。</p>
+
+    <footer class="doc-footer">© 2026 Wenbo Qiu ｜ 會記帳 · Spendome</footer>
+  </div>
+
+  <!-- ───────── English ───────── -->
+  <div class="wrap lang-en">
+    <header class="doc-header">
+      <span class="app">Spendome · AI Expense Tracker</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective: July 2, 2026 ｜ Last updated: July 2, 2026</p>
+    </header>
+
+    <p>
+      Wenbo Qiu ("we", "us") respects your privacy. This Privacy Policy explains how we collect, use,
+      store, share, and protect your personal data when you use Spendome (the "App"),
+      and the rights you have regarding that data.
+    </p>
+    <p>
+      Please read this Policy carefully before using the App.
+      <strong>By indicating your consent and using the App, you acknowledge that you have read and agree to this Policy.</strong>
+      If you do not agree, please do not use the App.
+    </p>
+
+    <div class="note">
+      We collect data on a "need-based, minimal" principle. Other than what is necessary to provide core
+      features, we do not collect personal data unrelated to the service.
+    </div>
+
+    <h2>1. Information We Collect and How We Use It</h2>
+    <p>We collect the following only as necessary to provide the corresponding features:</p>
+    <table>
+      <thead>
+        <tr><th>Scenario</th><th>Information</th><th>Purpose</th><th>Required</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Apple sign-in</td><td>Apple user identifier (Apple Sub), the email and name you authorize (may be hidden)</td><td>Create/sign in to your account</td><td>If you choose this method</td></tr>
+        <tr><td>Guest/device login</td><td>Random device identifier</td><td>Provide basic experience without registration</td><td>If you choose this method</td></tr>
+        <tr><td>Voice recording</td><td>Microphone audio (converted to text on-device and discarded; audio is never uploaded)</td><td>Use device speech recognition to transcribe, then pass the text to AI for parsing</td><td>When using voice input</td></tr>
+        <tr><td>AI recording / assistant</td><td>The text you type or dictate describing a transaction</td><td>Call a large language model to parse amount, category and date, or answer your queries</td><td>When using the feature</td></tr>
+        <tr><td>Transaction data</td><td>Amount, category, date, note, and channel you record</td><td>Display transaction list, statistics, charts, and AI queries</td><td>Required</td></tr>
+        <tr><td>Cloud sync</td><td>Transaction data, category preferences, reminder settings</td><td>Sync your data across your devices</td><td>When enabled after sign-in</td></tr>
+        <tr><td>Recurring reminders</td><td>Item name, amount and reminder time you configure</td><td>Send local push notifications before items are due</td><td>When using the feature</td></tr>
+        <tr><td>Subscription &amp; purchase</td><td>Platform transaction receipts, product ID, transaction ID, status, expiry</td><td>Verify subscription validity, grant Pro membership, prevent duplicate grants</td><td>When purchasing</td></tr>
+        <tr><td>Usage statistics</td><td>Daily AI usage count</td><td>Calculate free quota and grant bonus quota</td><td>Required</td></tr>
+      </tbody>
+    </table>
+
+    <h2>2. Third-Party Services (SDKs &amp; Processors)</h2>
+    <p>To provide certain features, the App integrates the following third-party services, each governed by its own privacy policy:</p>
+    <table>
+      <thead><tr><th>Third party</th><th>Purpose</th><th>Information involved</th></tr></thead>
+      <tbody>
+        <tr><td>Apple (sign-in &amp; IAP)</td><td>Apple sign-in, App Store subscription and payment</td><td>Apple user identifier, transaction receipts</td></tr>
+        <tr><td>Google Play (IAP)</td><td>Android subscription and payment</td><td>Transaction receipts</td></tr>
+        <tr><td>LLM providers (e.g. Anthropic, OpenAI, DeepSeek)</td><td>Parse transaction descriptions, answer AI assistant questions</td><td>The text you type or dictate (without your identity information)</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      The text you submit for AI parsing is sent to the LLM providers above. We transmit only the text content and
+      <strong>do not provide your Apple account or other identity information to the model providers.</strong>
+      Please do not enter sensitive personal data you do not wish to be processed.
+    </div>
+    <div class="note">
+      The App <strong>does not integrate any third-party advertising or cross-app tracking SDK</strong>,
+      and does not collect device identifiers used for ad targeting.
+    </div>
+
+    <h2>3. Device Permissions</h2>
+    <ul>
+      <li><strong>Microphone:</strong> requested only when you use voice input. Speech recognition is performed on-device — audio is never uploaded to our servers.</li>
+      <li><strong>Notifications:</strong> used to send recurring reminders (subscription renewals, bill reminders, etc.).</li>
+      <li><strong>Network:</strong> used for sign-in, AI recording, cloud sync and subscription verification.</li>
+    </ul>
+    <p>Permissions are not enabled by default and can be revoked anytime in system settings. Revoking disables the related feature but not others.</p>
+
+    <h2>4. Storage</h2>
+    <ul>
+      <li><strong>Location:</strong> personal data we collect is stored on servers located in Singapore.</li>
+      <li><strong>Retention:</strong> we retain your personal data only for as long as necessary for the purposes stated here, after which we delete or anonymize it unless otherwise required by law.</li>
+      <li><strong>On-device:</strong> your transaction data is cached in a local device database; login credentials are stored encrypted in the device's secure storage.</li>
+    </ul>
+
+    <h2>5. International Data Transfers</h2>
+    <p>
+      Because our servers and certain third-party providers (such as the LLM providers) may be located outside your
+      country or region, your personal data may be transferred to, and stored or processed in, jurisdictions whose
+      data-protection laws differ from those where you live. We take reasonable measures to ensure such transfers
+      comply with applicable law and that your data receives an adequate level of protection.
+    </p>
+
+    <h2>6. Sharing, Transfer &amp; Disclosure</h2>
+    <p>We do not sell your personal data. We will not share it except:</p>
+    <ul>
+      <li>with your prior explicit consent;</li>
+      <li>providing necessary information to the processors listed in Section 2 to deliver those features;</li>
+      <li>where required by law or by a competent judicial/administrative authority;</li>
+      <li>as necessary to protect the rights of the App and users, or to investigate fraud and security risks.</li>
+    </ul>
+    <p>In the event of a merger, acquisition, or bankruptcy involving a transfer of data, we will require the successor to remain bound by this Policy, or seek your consent again.</p>
+
+    <h2>7. How We Protect Your Information</h2>
+    <ul>
+      <li>HTTPS encryption in transit; login credentials stored encrypted;</li>
+      <li>access control and least-privilege for server-side data;</li>
+      <li>to provide and improve the service, troubleshoot, and prevent security risks, authorized personnel may access your transaction description text on a minimum-necessary basis; such personnel are bound by confidentiality obligations and limited to these purposes;</li>
+      <li>while we take reasonable measures, no internet transmission is absolutely secure; we continually work to safeguard your data.</li>
+    </ul>
+
+    <h2>8. Your Rights</h2>
+    <p>Subject to applicable law, you have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access &amp; correction:</strong> view and edit your transaction records in the App;</li>
+      <li><strong>Deletion:</strong> delete any of your transaction records;</li>
+      <li><strong>Data portability:</strong> where applicable law allows, request a copy of the data you provided to us in a common format;</li>
+      <li><strong>Account deletion:</strong> request account deletion in the App's Settings; we will delete or anonymize associated personal data unless otherwise required by law;</li>
+      <li><strong>Withdraw consent:</strong> revoke permissions or stop using the related features;</li>
+      <li><strong>Complaints:</strong> contact us via "Contact Us" below; if a data-protection authority is established where you live, you may also lodge a complaint with it.</li>
+    </ul>
+
+    <h2>9. Children</h2>
+    <p>
+      The App is intended primarily for adults. If you are a minor, please read this Policy with a guardian
+      and use the App only with the guardian's consent. We do not knowingly collect personal data from children;
+      if we learn we have done so without prior guardian consent, we will delete it promptly.
+    </p>
+
+    <h2>10. Updates to This Policy</h2>
+    <p>We may revise this Policy from time to time, publishing the updated version here and updating the "Effective" date. For material changes we will notify you, e.g. via in-app notice. Continued use after changes take effect constitutes acceptance.</p>
+
+    <h2>11. Contact Us</h2>
+    <ul>
+      <li>Operator: Wenbo Qiu</li>
+      <li>Email: <a href="mailto:wondergarden.app@qq.com">wondergarden.app@qq.com</a></li>
+    </ul>
+
+    <footer class="doc-footer">© 2026 Wenbo Qiu ｜ Spendome</footer>
+  </div>
+
+  <script>
+    const btns = [...document.querySelectorAll(".lang-switch button")];
+    function setLang(lang) {
+      document.body.className = "l-" + lang;
+      document.documentElement.lang = lang === "en" ? "en" : (lang === "hans" ? "zh-Hans" : "zh-Hant");
+      btns.forEach(b => b.classList.toggle("on", b.dataset.lang === lang));
+      window.scrollTo(0, 0);
+    }
+    btns.forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+    const nav = (navigator.language || "").toLowerCase();
+    let def = "hans";
+    if (nav.startsWith("zh")) def = /(tw|hk|mo|hant)/.test(nav) ? "hant" : "hans";
+    else if (nav) def = "en";
+    setLang(def);
+  </script>
+</body>
+</html>

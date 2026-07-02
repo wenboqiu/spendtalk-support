@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>会记账 · 支持与法务 · Spendome Support</title>
+  <link rel="stylesheet" href="shared/base.css" />
+  <style>
+    .lang-switch {
+      position: fixed; top: 14px; right: 14px; z-index: 20;
+      display: inline-flex; background: var(--bg); border: 1px solid var(--border);
+      border-radius: 999px; overflow: hidden; font-size: 13px; font-weight: 600;
+    }
+    .lang-switch button { border: none; background: transparent; color: var(--fg-muted); padding: 6px 14px; cursor: pointer; font: inherit; }
+    .lang-switch button.on { background: var(--accent); color: #fff; }
+    .lang-hant, .lang-hans, .lang-en { display: none; }
+    body.l-hant .lang-hant { display: inline; }
+    body.l-hans .lang-hans { display: inline; }
+    body.l-en  .lang-en  { display: inline; }
+  </style>
+</head>
+<body class="l-hans">
+  <div class="lang-switch">
+    <button data-lang="hans" class="on">简体</button>
+    <button data-lang="hant">繁體</button>
+    <button data-lang="en">EN</button>
+  </div>
+
+  <div class="wrap">
+    <header class="doc-header">
+      <span class="app">
+        <span class="lang-hans">会记账 · Spendome</span>
+        <span class="lang-hant">會記帳 · Spendome</span>
+        <span class="lang-en">Spendome</span>
+      </span>
+      <h1><span class="lang-hans">支持与法务</span><span class="lang-hant">支援與法務</span><span class="lang-en">Support &amp; Legal</span></h1>
+      <p class="meta">
+        <span class="lang-hans">各语言支持与法务页面索引。</span>
+        <span class="lang-hant">各語言支援與法務頁面索引。</span>
+        <span class="lang-en">Support and legal pages index.</span>
+      </p>
+    </header>
+
+    <h2><span class="lang-hans">产品与支持</span><span class="lang-hant">產品與支援</span><span class="lang-en">Product &amp; Support</span></h2>
+    <ul>
+      <li><a href="marketing.html"><span class="lang-hans">产品介绍</span><span class="lang-hant">產品介紹</span><span class="lang-en">About the app</span></a></li>
+      <li><a href="support.html"><span class="lang-hans">技术支持</span><span class="lang-hant">技術支援</span><span class="lang-en">Support</span></a></li>
+    </ul>
+
+    <h2><span class="lang-hans">法务</span><span class="lang-hant">法務</span><span class="lang-en">Legal</span></h2>
+    <ul>
+      <li><a href="privacy.html"><span class="lang-hans">隐私政策</span><span class="lang-hant">隱私權政策</span><span class="lang-en">Privacy Policy</span></a></li>
+      <li><a href="terms.html"><span class="lang-hans">服务条款</span><span class="lang-hant">服務條款</span><span class="lang-en">Terms of Service</span></a></li>
+    </ul>
+
+    <h2><span class="lang-hans">联系</span><span class="lang-hant">聯絡</span><span class="lang-en">Contact</span></h2>
+    <ul>
+      <li>Email: <a href="mailto:wondergarden.app@qq.com">wondergarden.app@qq.com</a></li>
+    </ul>
+
+    <footer class="doc-footer">
+      © 2026 Wenbo Qiu ｜ <span class="lang-hans">会记账</span><span class="lang-hant">會記帳</span><span class="lang-en">Spendome</span>
+    </footer>
+  </div>
+
+  <script>
+    const btns = [...document.querySelectorAll(".lang-switch button")];
+    function setLang(lang) {
+      document.body.className = "l-" + lang;
+      document.documentElement.lang = lang === "en" ? "en" : (lang === "hans" ? "zh-Hans" : "zh-Hant");
+      btns.forEach(b => b.classList.toggle("on", b.dataset.lang === lang));
+    }
+    btns.forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+    const nav = (navigator.language || "").toLowerCase();
+    let def = "hans";
+    if (nav.startsWith("zh")) def = /(tw|hk|mo|hant)/.test(nav) ? "hant" : "hans";
+    else if (nav) def = "en";
+    setLang(def);
+  </script>
+</body>
+</html>
