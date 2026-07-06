@@ -125,9 +125,8 @@
     }
     btns.forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
     const nav = (navigator.language || "").toLowerCase();
-    let def = "hans";
+    let def = "en";
     if (nav.startsWith("zh")) def = /(tw|hk|mo|hant)/.test(nav) ? "hant" : "hans";
-    else if (nav) def = "en";
     setLang(def);
   </script>
 </body>
